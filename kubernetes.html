@@ -52,14 +52,16 @@
                 <p class="card-text" style="text-align:justify">Kubernetes is a container orchestration technology that was initially implemented by Google for their “Google search”. It allows to easily provide and scale services based on containers. We implement our physics engine and our compile-server as containers. Therefore, both can run on Kubernetes and can theoretically scale like the Google search (if you have enough resources or money). The compile-server also uses its local Kubernetes (in which it runs) as service provider to start compilation jobs as new containers. The compilation server can therefore facilitate the complete power of a cluster to provide its users with compiled robot (Lejos) programs. As jobs (as an elemental resource) are directly implemented by Kubernetes, failed builds will therefore be automatically restarted and its status could be observed.<br />How you can observe the cluster status, deployment status and so on as you know from k8s is visualized beneath.</p>
                 <div class="text-center">
                     <div class="">
-                        <img src="assets/img/k8s.png" width="910" height="910" alt="">
+                        <img src="assets/img/k8s.png" width="910" height="910" alt="" class="img-fluid">
+                        <figcaption>Kubernetes cluster status</figcaption>
                     </div>
                 </div>
                 <br />
                 <p class="card-text" style="text-align:justify">The architecture looks as follows:</p>
                 <div class="text-center">
                     <div class="">
-                        <img src="assets/img/CompilationArch.png" width="910" alt="">
+                        <img src="assets/img/CompilationArch.png" width="910" alt="" class="img-fluid">
+                        <figcaption>Kubernetes integration into SPEARED (aka. Lejos Compilation)</figcaption>
                     </div>
                 </div>
                 <br />
