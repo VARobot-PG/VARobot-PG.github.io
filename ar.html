@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>Augmented Reality - VARobot</title>
+        <title>Robot Simulation - VARobot</title>
         <!-- Favicon-->
         <link rel="icon" type="image/x-icon" href="assets/img/upbicon.ico" />
         <!-- Font Awesome icons (free version)-->
@@ -49,21 +49,23 @@
         </div>
         <div class="cardalt text-white bg-orange" style="max-width: 50%;">
             <div class="card-body">
-                <p class="card-text" style="text-align:justify">Augmented Reality (AR for short) describes the real-time combination of real-world input with virtual enhancements. This usually happened by displaying real-life camera footage and displaying virtual objects in it. A very commonly known example is the application “Pokémon Go”, where it is possible to see virtual creatures (augmented) in the real world. AR can commonly be used either on a handheld device, like a smartphone or tablet, or on a head mounted device like the HoloLens.<br />In our project, both kinds of devices can be used in an approach to achieve interoperability and a wider selection of interaction possibilities. The handheld devices are limited to Android-capable ones, since we used ARCore for its advanced features.</p>
+                <p class="card-text" style="text-align:justify">Augmented Reality (AR for short) describes the real-time combination of real-world input with virtual enhancements. This usually happens by displaying real-life camera footage and displaying virtual objects in it. A very commonly known example is the application “Pokémon Go”, where it is possible to see virtual creatures (augmented) in the real world. AR can commonly be used either on a handheld device, like a smartphone or tablet, or on a head mounted device like the HoloLens.<br />In our project, both kinds of devices can be used in an approach to achieve interoperability and a wider selection of interaction possibilities. The handheld devices are limited to Android-capable ones, since we used ARCore for its advanced features.</p>
                 <div class="text-center">
                     <div class="">
                         <img src="assets/img/AR/ARCoreImage.png" width="910" height="910" alt="" class="img-fluid">
-                        <figcaption>The ARCore plane tracking: the plane is visualized by the dotted surface, the virtual Android robot in placed on top of it</figcaption>
+                        <figcaption>The ARCore plane tracking: the plane is visualized by the dotted surface, the virtual Android robot is placed on top of it</figcaption>
                     </div>
                 </div>
                 <br />
                 <p class="card-text" style="text-align:justify">ARCore offers so-called “plane detection” which is the possibility to scan a room with the smartphone camera and detect any planes. On these planes, objects can be placed and they will be displayed in the chosen position even if the user moves around. For this, special sensors are necessary, but luckily, most modern smartphones are equipped with these.<br />For the head-mounted device we use the HoloLens in combination with the MRTK, a toolkit for head mounted AR. The MRTK enables us to use, among other features, hand gestures or even eye tracking, offering new interaction possibilities.</p>
+                <!--
                 <div class="text-center">
                     <div class="">
                         <img src="assets/img/" width="910" alt="" class="img-fluid">
                         <figcaption>An interface in AR. The information and control elements are in sight at all time without disturbing the workflow.</figcaption>
                     </div>
                 </div>
+                -->
             </div>
         </div>
     </section>
@@ -78,7 +80,8 @@
         </div>
         <div class="cardalt text-black bg-white" style="max-width: 50%;">
             <div class="card-body">
-                <p class="card-text" style="text-align:justify">The benefits of AR are diverse and play into our research in different ways. Firstly, of course, there is the general point that AR can make interactions easier. Especially when wearing the HoloLens, the user can use both hands while still seeing information. In our framework, we use this to display interface elements like the code editor, so the user always has them in view. The components can also still be clicked in a similar way to non-AR applications, but in addition, the user can use additional options, like the hand gestures on the HoloLens, for interaction. This way, the user can choose the option that is the most comfortable for them.<br />The central point that sets the VAROBOT framework apart from others, however, is the fact that AR is used to simulate robot program executions. This way, a created program can be executed on a simulated robot before trying it on a real robot. Since robot programming is highly complex and needs a lot of knowledge about the surroundings, conventional methods are often very time consuming and error prone. One big problem is the need to deploy the program to a real robot every time for testing it and risking the robot getting damaged if there was a mistake in the program and the real robot, for example, collides with something. This can, in the worst case, be extremely expensive and might even stall production processes. The SPEARED solves this issue by simulating the robot programs in AR, making it possible to see how the robot would react and move virtually in the real space the robot should operate in. This way, it is possible to see if there are any collisions and if the robot moves as expected. Furthermore, the real robot can even continue working undisturbed by the development, as a good part of testing out programs can take place in AR. If the robot program is completed in AR, there is also an option to deploy it directly to the robot.</p>
+                <p class="card-text" style="text-align:justify">The benefits of AR are diverse and play into our research in different ways. Firstly, of course, there is the general point that AR can make interactions easier. Especially when wearing the HoloLens, the user can use both hands while still seeing information. In our framework, we use this to display interface elements like the code editor, so the user always has them in view. The components can also still be clicked in a similar way to non-AR applications, but in addition, the user can use additional options, like the hand gestures on the HoloLens, for interaction. This way, the user can choose the option that is the most comfortable for them.<br />The central point that sets the VAROBOT framework apart from others, however, is the fact that AR is used to simulate robot program executions. This way, a created program can be executed on a simulated robot before trying it on a real robot. Since robot programming is highly complex and needs a lot of knowledge about the surroundings, conventional methods are often very time consuming and error prone. One big problem is the need to deploy the program to a real robot every time for testing it and risking the robot getting damaged if there was a mistake in the program and the real robot, for example, collides with something. This can, in the worst case, be extremely expensive and might even stall production processes. The VAROBOT framework solves this issue by simulating the robot programs in AR, making it possible to see how the robot would react and move virtually in the real space the robot should operate in. This way, it is possible to see if there are any collisions and if the robot moves as expected. Furthermore, the real robot can even continue working undisturbed by the development, as a good part of testing out programs can take place in AR. If the robot program is completed in AR, there is also an option to deploy it directly to the robot.</p>
+                <!--
                 <div class="text-center">
                     <div class="">
                         <img src="assets/img/" width="910" alt="" class="img-fluid">
@@ -86,7 +89,8 @@
                     </div>
                 </div>
                 <br />
-                <p class="card-text" style="text-align:justify">We hope to help to make the programming more effective and less time- and resource consuming, as this would save a lot of costs. This might also support new developments in robots, since developing new solutions becomes more feasible. A reduction in development costs could even make robots become more accessible for small and medium enterprises.</p>
+                -->
+                <p class="card-text" style="text-align:justify">We hope to help making the programming more effective and less time- and resource consuming, as this would save a lot of costs. This might also support new developments in robots, since developing new solutions becomes more feasible. A reduction in development costs could even make robots become more accessible for small and medium enterprises.</p>
             </div>
             
         </div>

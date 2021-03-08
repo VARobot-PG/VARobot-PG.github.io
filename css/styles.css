@@ -10233,7 +10233,7 @@ header.masthead h1 {
   font-weight: 600;
   letter-spacing: 0.1rem;
   box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.1);
-  z-index: 10;
+  z-index: 5000;
 }
 
 .nav-item {
@@ -10474,3 +10474,68 @@ video {
 body {
   overflow-x: hidden; /* Hide horizontal scrollbar */
 }
+
+/* TEAM */
+.our-team-main {
+  width: 100%;
+  height: auto;
+  /* border-bottom: 7px #8B0000 solid; */
+  background: #f4623a;
+  text-align: center;
+  /* border-radius: 10px; */
+  overflow: hidden;
+  position: relative;
+  transition: 0.5s;
+  margin-bottom: 28px
+}
+
+.our-team-main img {
+  border-radius: 50%;
+  margin-bottom: 20px;
+  width: 90px
+}
+
+.our-team-main h3 {
+  font-size: 20px;
+  font-weight: 700
+}
+
+.our-team-main p {
+  margin-bottom: 0
+}
+
+/*
+.team-back {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 5px 15px 0 15px;
+  text-align: left;
+  background: #fff
+}
+*/
+
+.team-front {
+  width: 100%;
+  height: auto;
+  position: relative;
+  z-index: 10;
+  background: #f4623a;
+  padding: 15px;
+  bottom: 0px;
+  transition: all 0.5s ease
+}
+
+/*
+.our-team-main:hover .team-front {
+  bottom: -200px;
+  transition: all 0.5s ease
+}
+
+.our-team-main:hover {
+  border-color: #FF0000;
+  transition: 0.5s
+}
+*/
