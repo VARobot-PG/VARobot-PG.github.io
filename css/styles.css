@@ -2448,8 +2448,8 @@ fieldset:disabled a.btn {
 }
 .btn-primary:focus, .btn-primary.focus {
   color: #fff;
-  background-color: #f24516;
-  border-color: #ee3e0d;
+  background-color: rgb(0, 0, 60);
+  border-color: rgb(0, 0, 60);
   box-shadow: 0 0 0 0.2rem rgba(246, 122, 88, 0.5);
 }
 .btn-primary.disabled, .btn-primary:disabled {
@@ -4017,6 +4017,7 @@ input[type=button].btn-block {
   background-color: transparent;
   border: 1px solid transparent;
   border-radius: 0.25rem;
+
 }
 .navbar-toggler:hover, .navbar-toggler:focus {
   text-decoration: none;
@@ -5813,7 +5814,7 @@ a.close.disabled {
   /* background-color: blue !important; */
   /* padding: 5px; */
   height: 47% !important;
-  background-color: #e7e7e7 !important;
+  background-color: #f8f9fa !important;
 }
 
 .carousel.pointer-event {
@@ -5827,7 +5828,7 @@ a.close.disabled {
   /* height: 450px !important; */
   height: 100% !important;
   border-radius: 20px;
-  background-color: #e7e7e7 !important;
+  background-color: #f8f9fa !important;
 }
 .carousel-inner::after {
   display: block;
@@ -5846,7 +5847,7 @@ a.close.disabled {
   transition: transform 0.6s ease-in-out;
   /* height: 450px !important; */
   height: 100% !important;
-  background-color: #e7e7e7 !important;
+  background-color: #f8f9fa !important;
 }
 @media (prefers-reduced-motion: reduce) {
   .carousel-item {
@@ -10624,4 +10625,54 @@ body {
   text-align: center;
   font: 32px Arial, sans-serif;
   display: inline-block;
+}
+
+/*
+@media (max-width: 1200px) {
+  .navbar-header {
+      float: none;
+  }
+  .navbar-left,.navbar-right {
+      float: none !important;
+  }
+  .navbar-toggle {
+      display: block;
+  }
+  .navbar-collapse {
+      border-top: 1px solid transparent;
+      box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+  }
+  .navbar-fixed-top {
+      top: 0;
+      border-width: 0 0 1px;
+  }
+  .navbar-collapse.collapse {
+      display: none!important;
+  }
+  .navbar-nav {
+      float: none!important;
+      margin-top: 7.5px;
+  }
+  .navbar-nav>li {
+      float: none;
+  }
+  .navbar-nav>li>a {
+      padding-top: 10px;
+      padding-bottom: 10px;
+  }
+  .collapse.in{
+      display:block !important;
+  }
+}
+*/
+
+@media (min-width: 0px) {
+  .navbar-collapse{
+  background-color: #f8f9fa !important;
+  }  
+}
+@media (min-width: 1199px) {
+  .navbar-collapse{
+  background-color: unset !important;
+  }  
 }
