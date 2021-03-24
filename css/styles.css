@@ -10712,12 +10712,7 @@ body {
   .carousel-caption h2 {
     text-shadow: 0.1rem 0.1rem 0.3rem white;
     color: rgb(0, 0, 60);
-    font-size: 1rem !important;
+    font-size: 0.7rem !important;
   }
 
-  .carousel-caption p {
-    text-shadow: 0.1rem 0.1rem 0.3rem white;
-    color: rgb(0, 0, 60);
-    font-size: 1rem !important;
-  }
 }
